@@ -82,11 +82,13 @@
 <div id="main-content">
     <div class="box" style="border-left: 5px solid #1a73e8;">
         <h1>810browser-setup</h1>
-        <div class="download-area">
-            <a href="https://github.com/yougenjiangteng-afk/810browser-2026/raw/main/810jyoka.tar.gz" class="btn btn-latest">Download setup (.tar.gz)</a>
-            <div class="note">※初回起動時：右クリック ＞ 解凍</div>
-        </div>
-       アプリ初回起動の時は同じファイルに入れて10秒ほど連打してください<br>これがないと開けない場合があります。注意してご利用ください。
+        #!/bin/bash<br>
+cd "$(dirname "$0")"<br><br>
+for app in *.app; do<br>
+    if [ -d "$app" ]; then<br>
+        xattr -cr "$app"<br>
+    fi<br>
+done<br>
     </div>
 
     <div class="box" style="border-left: 5px solid #1a73e8;">
