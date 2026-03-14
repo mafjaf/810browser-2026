@@ -49,6 +49,40 @@
 </head>
 <body>
 
+    <div id="jyoka-header" style="background: linear-gradient(90deg, #000, #1a1a1a); border-bottom: 2px solid #00FF00; padding: 15px; text-align: center; color: #fff; font-family: sans-serif;">
+    <div style="display: inline-block; border: 1px solid #00FF00; padding: 5px 15px; border-radius: 20px; margin-bottom: 10px;">
+        <span style="color: #00FF00; font-weight: bold;">⚡️ 810浄化システム 起動中 ⚡️</span>
+    </div>
+    
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="font-size: 0.9em;">
+            1. <a href="810浄化.command" download="810浄化.command" style="color: #00FF00; text-decoration: underline; font-weight: bold;">[810浄化.command]</a> をDLしてアプリと同じフォルダへ
+        </div>
+        <div style="font-size: 0.9em; display: flex; align-items: center; gap: 5px;">
+            2. ターミナルで <code id="copy-target" style="background: #333; padding: 3px 8px; border-radius: 3px; font-family: monospace; color: #00FF00;">chmod +x ./"810浄化.command"</code> 実行
+            <button onclick="copyCommand()" style="background: #00FF00; color: #000; border: none; padding: 3px 10px; cursor: pointer; border-radius: 3px; font-size: 0.8em; font-weight: bold;">コピー</button>
+        </div>
+        <div style="font-size: 0.9em;">
+            3. <b>810浄化.command</b> をダブルクリックで完了！
+        </div>
+    </div>
+</div>
+
+<script>
+function copyCommand() {
+    const text = document.getElementById('copy-target').innerText;
+    navigator.clipboard.writeText(text);
+    const btn = event.target;
+    const originalText = btn.innerText;
+    btn.innerText = "完了！";
+    btn.style.background = "#fff";
+    setTimeout(() => { 
+        btn.innerText = originalText; 
+        btn.style.background = "#00FF00";
+    }, 2000);
+}
+</script>
+
 <div id="site-lock">
     <div class="lock-container">
         <h2 style="margin-top:0;">LOCKING</h2>
