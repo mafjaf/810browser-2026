@@ -49,29 +49,6 @@
 </head>
 <body>
 
-   <div id="jyoka-simple" style="background: #222; border: 1px solid #444; margin: 10px; padding: 15px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: sans-serif;">
-    
-    <div style="flex: 1;">
-        <span style="color: #00FF00; font-weight: bold; font-size: 0.85em;">810浄化システム</span>
-        <p style="margin: 5px 0 0 0; color: #ccc; font-size: 0.75em; line-height: 1.4;">
-            アプリが開けない場合は、下のボタンからDLして解凍後、<br>
-            アプリと同じフォルダに入れてダブルクリックしてください。
-        </p>
-    </div>
-
-    <a href="810jyoka.tar.gz" download="810jyoka.tar.gz" 
-       style="background: #00FF00; color: #000; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9em; white-space: nowrap; box-shadow: 0 2px 10px rgba(0, 255, 0, 0.3); transition: transform 0.2s;">
-       810浄化.command をDL
-    </a>
-</div>
-
-<script>
-    // ボタンを少しだけ弾ませて目立たせる（任意）
-    const btn = document.querySelector('#jyoka-simple a');
-    btn.onmouseover = () => btn.style.transform = "scale(1.05)";
-    btn.onmouseout = () => btn.style.transform = "scale(1)";
-</script>
-
 <div id="site-lock">
     <div class="lock-container">
         <h2 style="margin-top:0;">LOCKING</h2>
@@ -101,6 +78,16 @@
     <div class="spinner"></div>
     <div style="color: #1a73e8; font-weight: bold; font-size: 20px;">認証情報を確認中...</div>
 </div>
+
+<div id="main-content">
+    <div class="box" style="border-left: 5px solid #1a73e8;">
+        <h1>810browser v1.1.0 (First Release)</h1>
+        <div class="download-area">
+            <a href="https://github.com/yougenjiangteng-afk/810browser-2026/blob/main/810jyoka.tar.gz" class="btn btn-latest">Download 810セットアプリ (.tar.gz)</a>
+            <div class="note">※初回起動時：右クリック ＞ 解凍</div>
+        </div>
+       アプリ初回起動の時はこちらを同じファイルに入れて10秒ほど連打してください<br>これがないと開けない場合があります。注意してご利用ください。
+    </div>
 
 <div id="main-content">
     <div class="box" style="border-left: 5px solid #1a73e8;">
